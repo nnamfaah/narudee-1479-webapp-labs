@@ -1,0 +1,27 @@
+body { margin: 0; padding: 60px 20px; background: #FFF0F5; color: #831843; font-family: Georgia, serif; }
+
+main {
+    max-width: 720px; margin: auto; background: #FFF7FA;
+    border: 1px solid #FBCFE8; border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(219,39,119,.15);
+    padding: 48px 56px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 32px 40px;
+    grid-template-areas: "header header" "about about" "hobbies skills";
+}
+
+#profile-header { grid-area: header; background: #F472B6; padding: 24px; border-radius: 8px; text-align: center; }
+#about-me { grid-area: about; }
+#hobbies { grid-area: hobbies; }
+#skills { grid-area: skills; }
+
+.page-title { margin: 0 0 8px; color: #FFF0F5; }
+.student-id { margin: 0; color: #FFF0F5; font-weight: normal; }
+
+.content-section h2 { border-bottom: 3px solid #DB2777; display: inline-block; margin-top: 0; padding-bottom: 4px; }
+.content-section p { margin-bottom: 0; }
+
+.key-term { background: #DB2777; color: #FFF0F5; font-weight: bold; padding: 0 4px; border-radius: 3px; }
+
+.hobbies-list { list-style: lower-roman; color: #F472B6; padding-left: 22px; margin: 0; }
+.skills-list { list-style: circle; color: #F472B6; padding-left: 22px; margin: 0; }
+.hobbies-list li, .skills-list li { color: #831843; margin-bottom: 6px; }
